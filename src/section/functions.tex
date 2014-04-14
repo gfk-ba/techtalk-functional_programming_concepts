@@ -1,0 +1,34 @@
+\begin{frame}
+	\frametitle{Functors a.k.a. First-class Functions}
+	\begin{block}{}<+->
+		A \alert{functor} is a function object instance that can be referenced by a variable like a regular object, and which can be evaluated by invoking a method on the object.
+	\end{block}
+
+	\begin{itemize}[<+-| highlight@+>]
+		\item Almost all imperative programming languages support the concept of functor.
+		\item There are big differences between languages w.r.t. functors:
+		\begin{itemize}[<+-| highlight@+>]
+			\item Restrictions that apply to functors;
+			\item Support from the language itself;
+			\item Support from the standard libraries.
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{Using functors to express functional concepts}
+	\begin{itemize}[<+-| highlight@+>]
+		\item Consider using \alert{pure functions}:
+		\begin{itemize}[<+-| highlight@+>]
+			\item Side-effect-free.
+			\item Context independent.
+		\end{itemize}
+		\item Next best thing: Side-effect-free functions, but context dependent.
+		\item Never use functors with side-effects without a very good reason.
+		\begin{itemize}[<+-| highlight@+>]
+			\item If you decide to, then try to keep the side-effects as local/close-by as possible.
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+

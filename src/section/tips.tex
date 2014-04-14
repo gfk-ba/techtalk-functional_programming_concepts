@@ -1,0 +1,18 @@
+\begin{frame}
+	\frametitle{Tips \& Tricks}
+	\begin{itemize}[<+-| highlight@+>]
+		\item Prefer pure functions.
+		\begin{itemize}[<+-| highlight@+>]
+			\item Otherwise use side-effect-free functions.
+			\item Otherwise don't use functional concepts, to avoid confusion.
+		\end{itemize}
+		\item Use function argument binding, for quickly creating specific functions.
+		\item Consider using function result caching/memoizing to speed-up computation.
+		\begin{itemize}[<+-| highlight@+>]
+			\item Note: Only use result caching for \alert{pure} functions!
+		\end{itemize}
+		\item Use in-place operations if applicable to increase performance.
+	\end{itemize}
+\end{frame}
+
+
